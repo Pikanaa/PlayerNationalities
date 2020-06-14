@@ -67,8 +67,8 @@ resData = json.loads(result)
 
 i = 1
 if(resData['data']['tournament'] == None):
-    print("Tournament not recognized, try again")
-    sys.exit()
+    input("Tournament not recognized, try again")
+    exit()
 
 print("\nEvents:")
 for event in resData['data']['tournament']['events']:
